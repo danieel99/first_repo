@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # wczytywanie danych
-iris = pd.read_csv(r"C")
+iris = pd.read_csv('iris1.csv')
 
 # rysowanie wykresów dla płatków (petal)                   
 xp_min = iris['petal.length'].min()
@@ -89,7 +89,7 @@ sns.pairplot(iris, hue="variety")
 # modele predykcyjne
 from sklearn.linear_model import LinearRegression
 
-iris = pd.read_csv(r"")
+iris = pd.read_csv('iris1.csv')
 
 X_train = iris.iloc[:,:4]
 y_train = iris.loc[:,'variety']
